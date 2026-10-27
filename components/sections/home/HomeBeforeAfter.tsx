@@ -16,7 +16,7 @@ export default function HomeBeforeAfter() {
               Cuidado em cada detalhe
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-              See roofing project images and talk with Joe about your roof.
+              See roofing project images and talk with Joshua about your roof.
             </p>
             <Link
               href="/roof-repairs/"
@@ -36,7 +36,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#0B141C]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#080808]/85 text-white font-body text-12 px-3 py-1">
                   Imagem ilustrativa
                 </span>
               </div>
@@ -48,7 +48,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#0B141C]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#080808]/85 text-white font-body text-12 px-3 py-1">
                   Imagem ilustrativa
                 </span>
               </div>

@@ -16,7 +16,7 @@ export default function HomeLocation() {
               Contact & availability
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink">
-              Talk to Joe
+              Contact Robustus Roofing
             </h2>
           </div>
         </AnimateOnScroll>
@@ -33,7 +33,7 @@ export default function HomeLocation() {
                   {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Call to discuss your roof or guttering project and confirm availability.
+                  Call to discuss your roofing project and confirm availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F5F7] border border-[#E1E5E9] px-3 py-1.5 text-12 text-[#15191E]">
+                    <span key={highlight} className="bg-[#F7F5EF] border border-[#E5DFD2] px-3 py-1.5 text-12 text-[#171717]">
                       {highlight}
                     </span>
                   ))}
@@ -63,7 +63,7 @@ export default function HomeLocation() {
                           <span>{item.day}</span><span>{item.hours}</span>
                         </div>
                       ))
-                    : 'Call Joe to confirm availability.'}
+                    : 'Call Robustus Roofing to confirm availability.'}
                 </div>
               </div>
 
@@ -73,10 +73,10 @@ export default function HomeLocation() {
                   variant="ghost"
                   size="md"
                 >
-                  Ligar agora
+                  Call now
                 </Button>
                   <Button href="/contact/" variant="forest" size="md">
-                  Contact Joe
+                  Contact Robustus Roofing
                 </Button>
               </div>
             </AnimateOnScroll>
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Go With Joe Roof Repairs & Guttering
+                  Robustus Roofing Limited
                 </div>
               </div>
             </AnimateOnScroll>
@@ -106,10 +106,10 @@ export default function HomeLocation() {
                     Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roof repairs and guttering
+                    Roof repairs and replacement roofing
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
-                    Call Joe to discuss your roofing or guttering needs.
+                    Call Robustus Roofing to discuss your project.
                   </p>
                   <div className="flex items-center gap-2 text-13 font-body text-forest">
                     <span className="w-2 h-2 rounded-full bg-forest animate-pulse" />
@@ -126,7 +126,7 @@ export default function HomeLocation() {
                     variant="forest"
                     size="sm"
                   >
-                    Contact Joe
+                    Contact Robustus Roofing
                   </Button>
                 </div>
               </div>

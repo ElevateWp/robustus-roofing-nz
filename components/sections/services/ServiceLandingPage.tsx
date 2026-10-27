@@ -10,14 +10,10 @@ import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateServiceSchema } from '@/lib/seo';
 
 const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'roof-repairs': ['roof-leak-detection', 'guttering-downpipes', 're-roofing'],
-  'roof-leak-detection': ['roof-repairs', 'guttering-downpipes', 'metal-roofing'],
-  'guttering-downpipes': ['roof-repairs', 'roof-leak-detection', 're-roofing'],
-  're-roofing': ['roof-restoration', 'roof-repairs', 'gutter-guard'],
-  'roof-restoration': ['gutter-guard', 'skylight-roof-repairs', 're-roofing'],
-  'gutter-guard': ['roof-restoration', 're-roofing', 'skylight-roof-repairs'],
-  'skylight-roof-repairs': ['roof-restoration', 'gutter-guard', 're-roofing'],
-  'metal-roofing': ['roof-leak-detection', 'roof-repairs', 're-roofing'],
+  'roof-repairs': ['roof-replacement', 'new-build-roofing'],
+  'roof-replacement': ['roof-repairs', 'new-build-roofing'],
+  'new-build-roofing': ['roof-repairs', 'roof-replacement', 'shed-roof-replacement'],
+  'shed-roof-replacement': ['roof-repairs', 'roof-replacement', 'new-build-roofing'],
 };
 
 export default function ServiceLandingPage({ slug }: { slug: string }) {
@@ -38,7 +34,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  Go With Joe Roof Repairs & Guttering
+                  Robustus Roofing Limited
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -105,7 +101,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
               </article>
             ))}
           </div>
-          <p className="mt-6 max-w-3xl font-body text-13 leading-relaxed text-forest-light">The quote and timing depend on your roof, materials and the agreed scope. Joe discusses these details with you before work begins.</p>
+          <p className="mt-6 max-w-3xl font-body text-13 leading-relaxed text-forest-light">The quote and timing depend on your roof, materials and the agreed scope. Joshua discusses the project details with you before work begins.</p>
         </div>
       </section>
 
@@ -162,7 +158,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">What to expect</span>
             <h2 className="font-display text-33 text-forest-ink md:text-41">Before, during and after the work</h2>
-            <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every roof and project is different. Talk to Joe about the details of your work.</p>
+            <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every roof and project is different. Contact Joshua to discuss your project.</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
             {service.recoveryTimeline.map((item, index) => (
@@ -183,19 +179,19 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
           <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-8">
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Frequently asked questions</span>
             <h2 className="font-display text-33 text-forest-ink md:text-41">Questions about {service.name.toLowerCase()}</h2>
-            <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">If you have questions about your roof, get in touch with Joe.</p>
+            <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">If you have questions about your roof, get in touch with Robustus Roofing.</p>
           </AnimateOnScroll>
           <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <Accordion items={service.faqs.map(({ question, answer }) => ({ question, answer }))} />
             </div>
             <AnimateOnScroll animation="fade-left" delay={0.1} className="bg-forest p-7 text-paper md:p-9 lg:col-span-5">
-              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-paper/65">Talk to Joe</span>
+              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-paper/65">Talk to Robustus Roofing</span>
               <h3 className="font-display text-26">Talk through the next steps for your roof.</h3>
               <p className="mt-4 font-body text-15 leading-relaxed text-paper/75">Explain what is happening and request a quote.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
                 <Button href="/request-a-quote/" variant="paper" size="lg">Request a quote</Button>
-                <Button href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} variant="ghost-light" size="lg">Call Joe</Button>
+                <Button href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} variant="ghost-light" size="lg">Call Robustus Roofing</Button>
               </div>
             </AnimateOnScroll>
           </div>
@@ -229,8 +225,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Go With Joe Roof Repairs & Guttering</span>
-            <h2 className="font-display text-26 md:text-33">Tell Joe what you need.</h2>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Robustus Roofing Limited</span>
+            <h2 className="font-display text-26 md:text-33">Tell us about your roofing project.</h2>
           </div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>

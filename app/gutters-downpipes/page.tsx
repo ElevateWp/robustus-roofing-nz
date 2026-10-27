@@ -1,6 +1,2 @@
 import { redirect } from 'next/navigation';
-export default function LegacyServicePage() { redirect('/guttering-downpipes/'); }
-
-
-
-
+export default function LegacyServicePage() { redirect('/services/'); }

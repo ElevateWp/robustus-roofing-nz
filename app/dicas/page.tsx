@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Roofing advice',
   description:
-    'Roofing advice from Go With Joe: roof repairs, gutter maintenance and re-roofing.',
+    'Roofing advice from Robustus Roofing about roof repairs, replacement roofing and new builds.',
   pathname: '/blog/',
 });
 
@@ -31,9 +31,9 @@ export default function BlogIndexPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Roofing advice
                 </span>
-                <WordRevealH1 text="Practical advice for roof repairs and guttering." />
+                <WordRevealH1 text="Practical advice for roofing projects." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Read practical guides to spotting roof leaks, maintaining gutters and planning a roof replacement.
+                  Read practical guides about roof repairs, replacement roofing and planning a new build roof.
                 </p>
               </AnimateOnScroll>
             </div>

@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-4 mb-5">
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/logo.png"
-                  alt="Go With Joe Roof Repairs & Guttering logo"
+                  src="/images/robustus-roofing-logo.png"
+                  alt="Robustus Roofing Limited logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Go With Joe Roof Repairs & Guttering
+                  Robustus Roofing Limited
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
                   Roof repairs · Guttering · Re-roofing
@@ -30,10 +30,10 @@ export default function Footer() {
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof repairs and guttering in Warriewood and across Sydney Northern Beaches.
+              Roof repairs, roof replacement and new build roofing in Auckland, New Zealand.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <span>+61 432 616 008</span>
+              <span>+64 22 358 6401</span>
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Roofing services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need a roof repair or guttering? Call Joe to discuss the work.
+                Need roofing work? Call Robustus Roofing to discuss your project.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -95,7 +95,7 @@ export default function Footer() {
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/team/" className="text-paper/80 hover:text-lime transition-colors">
-                  Meet Joe and the team
+                  Meet Joshua and the team
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Go With Joe Roof Repairs & Guttering</a>
+            <a href="/" className="hover:text-paper">Robustus Roofing Limited</a>
           </div>
         </div>
       </div>

@@ -67,7 +67,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Joe & the team', path: '/team/' },
+              { name: 'Joshua & the team', path: '/team/' },
               { name: dentist.name, path: `/team/${dentist.slug}/` },
             ]}
           />
@@ -218,7 +218,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
                 Request a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Would you like a roofing quote from Joe and the team?
+                Would you like a roofing quote from Joshua and the team?
               </h2>
             </div>
           </AnimateOnScroll>

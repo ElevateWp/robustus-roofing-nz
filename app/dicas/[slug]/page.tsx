@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe Go With Joe Roof Repairs & Guttering',
+      name: author?.name || 'Equipe Robustus Roofing Limited',
     },
     publisher: {
       '@type': 'Organization',
@@ -226,7 +226,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                 Roofing advice
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Talk to Joe about your roofing project
+                Talk to Robustus Roofing about your project
               </h2>
             </div>
           </AnimateOnScroll>

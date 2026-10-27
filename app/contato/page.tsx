@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and service area',
   description:
-    'Contact Go With Joe on +61 432 616 008 about roof repairs, leaks and guttering.',
+    'Contact Robustus Roofing on +64 22 358 6401 about roof repairs and replacement roofing.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Talk to Joe." />
+                <WordRevealH1 text="Contact Robustus Roofing." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call Joe to discuss roof repairs, guttering or arranging an inspection.
+                  Call to discuss roof repairs or replacement roofing.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                     Get in touch
                   </span>
                   <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                    Contact Joe
+                    Contact Robustus Roofing
                   </h2>
                   <a
                     href="/request-a-quote/"
@@ -66,7 +66,7 @@ export default function ContactPage() {
                     {/* Ligue */}
                     <div className="py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-mist/30 px-4 -mx-4 rounded-sm">
                       <div>
-                        <span className="font-body text-13 text-forest font-semibold block">Call Joe</span>
+                        <span className="font-body text-13 text-forest font-semibold block">Call Robustus Roofing</span>
                         <a
                           href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                           target="_blank"
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Roofing and guttering enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Roofing enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Based in Warriewood and serving Sydney Northern Beaches. Call to confirm availability.
+                    Based in Auckland and serving Auckland and surrounding areas. Call to confirm availability.
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                         <span className="font-medium text-forest-ink">{item.day}</span>
                         <span className="tabular-nums text-forest-ink/80">{item.hours}</span>
                       </div>
-                    )) : <p className="p-3.5 text-forest-ink/80">Call Joe to check availability.</p>}
+                    )) : <p className="p-3.5 text-forest-ink/80">Call Robustus Roofing to check availability.</p>}
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Call Joe to check availability for your property.
+                    Call the team to check availability for your project.
                     </p>
                   </div>
 
@@ -155,7 +155,7 @@ export default function ContactPage() {
                       variant="lime"
                       size="sm"
                     >
-                      Call Joe
+                      Call Robustus Roofing
                     </Button>
                     <a
                       href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}

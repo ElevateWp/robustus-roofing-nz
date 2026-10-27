@@ -11,17 +11,17 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Go With Joe | Roof Repairs & Guttering in Warriewood',
+    default: 'Robustus Roofing | Roof Repairs in Auckland',
     template: '%s',
   },
   description:
-    'Roof repairs, leak detection, re-roofing and guttering in Warriewood and Sydney Northern Beaches. Call +61 432 616 008.',
+    'Roof repairs, roof replacement and new build roofing in Auckland, New Zealand. Call +64 22 358 6401.',
   keywords: [
-    'Go With Joe Roof Repairs & Guttering',
-    'roof repairs Warriewood Northern Beaches',
-    'roof repairs and guttering',
+    'Robustus Roofing Limited',
+    'roofing contractor Auckland New Zealand',
+    'roof repairs Auckland',
   ],
-  authors: [{ name: 'Go With Joe Roof Repairs & Guttering' }],
+  authors: [{ name: 'Robustus Roofing Limited' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-AU" className="scroll-smooth">
+    <html lang="en-NZ" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,12 +48,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FF8A4C] selection:text-[#15191E]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#B89A50] selection:text-[#171717]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">
-          Pular para o conteúdo principal
+          Skip to main content
         </a>
         <LenisProvider>
           <Navbar />

@@ -37,7 +37,7 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-sublime-category]{font-size:12px;line-height:1.5;color:#71766f;}
         [data-sublime-eyebrow]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;text-align:center;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:.005em;color:#71766f;}
         [data-sublime-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0;text-align:center;font-size:16px;font-weight:400;line-height:1.5;color:#646a63;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#69727C;font-size:11px;letter-spacing:.01em;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#686868;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){[data-sublime-category]{max-width:12ch;text-align:right;}[data-sublime-eyebrow]{font-size:12px;}[data-sublime-support]{font-size:14px;}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 76px);}}
         @container(max-height:479px){[data-sublime-header]{top:18px;}[data-sublime-support]{top:calc(var(--gp-word-bottom,50%) + 16px);}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 60px);}[data-sublime-scroll]{display:none;}}
@@ -52,8 +52,8 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-slipstream-no]{display:inline-block;margin-right:.7rem;color:rgba(251,251,250,.85);font:500 .75rem ui-monospace,monospace;letter-spacing:.08em;transform:translateY(-.1em);}
         @container(min-width:768px){[data-slipstream-features]{grid-template-columns:repeat(3,minmax(0,1fr));gap:3.5rem;}}
       `}</style>
-      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Conheça a Go With Joe" front={<>
-          <div data-sublime-header><span data-sublime-logo>Go With Joe</span><span data-sublime-category>Roof repairs and guttering</span></div>
+      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Conheça a Robustus Roofing" front={<>
+          <div data-sublime-header><span data-sublime-logo>Robustus Roofing</span><span data-sublime-category>Roof repairs and roof replacement</span></div>
           <p data-sublime-eyebrow>Roof repairs with care and attention to detail.</p>
           <p data-sublime-support>Explore our roofing services.</p>
           <span data-sublime-scroll>Scroll to explore ↓</span>
@@ -63,10 +63,10 @@ export default function Demo(props: Partial<typeof settings>) {
           <div data-slipstream-features>
             <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Choose a service</h3><p>Explore roofing services and learn what to expect.</p></div>
             <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Talk through the options</h3><p>Every project starts with a conversation about the roof.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Talk to Joe</h3><p>Tell Joe about your roof and the work you need.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Contact Joshua</h3><p>Discuss your roofing project with Joshua.</p></div>
           </div>
         </div>
-      </GlyphPortal> : <div role="status" style={{ height: "100%", display: "grid", placeItems: "center", color: "#555", fontSize: 12 }}>Carregando…</div>}
+      </GlyphPortal> : <div role="status" style={{ height: "100%", display: "grid", placeItems: "center", color: "#555", fontSize: 12 }}>Loading…</div>}
     </div>
   );
 }

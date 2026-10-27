@@ -9,7 +9,7 @@ import HomeDentists from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our team',
-  description: 'Meet Joe and the team. With 14 years in roofing, they help Northern Beaches homeowners with roof repairs and guttering.',
+  description: 'Meet Joshua and the Robustus team, an Auckland roofing team customers praise for skill, hard work and a quality finish.',
   pathname: '/team/',
 });
 
@@ -20,9 +20,9 @@ export default function TeamPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <Breadcrumbs items={[{ name: 'Our team', path: '/team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Go With Joe Roof Repairs & Guttering</span>
-            <WordRevealH1 text="Meet Joe and the team." />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Meet Joe and the team. With 14 years in roofing, they help Northern Beaches homeowners with roof repairs and guttering.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Robustus Roofing Limited</span>
+            <WordRevealH1 text="Meet Joshua and the Robustus team." />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Meet Joshua and the Robustus team, an Auckland roofing team customers praise for skill, hard work and a quality finish.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Go With Joe Roof Repairs & Guttering</span><h2 className="font-display text-26 md:text-33">Tell Joe what you need.</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Robustus Roofing Limited</span><h2 className="font-display text-26 md:text-33">Tell us about your roofing project.</h2></div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>

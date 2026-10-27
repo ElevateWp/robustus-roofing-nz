@@ -15,7 +15,7 @@ export default function HomeFinalCTA() {
 
         <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
           <p className="font-body text-17 md:text-21 text-paper/80 leading-relaxed max-w-xl mb-10 mx-auto">
-            Call Joe to talk through the issue, arrange an inspection and request a clear quote.
+            Call Joshua to talk through the issue, arrange an inspection and request a clear quote.
           </p>
         </AnimateOnScroll>
 

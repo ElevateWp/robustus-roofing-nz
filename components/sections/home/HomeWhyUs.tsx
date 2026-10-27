@@ -6,7 +6,7 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 const REASONS = [
   {
     title: 'Clear communication',
-    description: 'Speak directly with Joe about your roof or guttering issue.',
+    description: 'Speak directly with Joshua about your roofing project.',
   },
   {
     title: 'Detailed quotes',
@@ -17,8 +17,8 @@ const REASONS = [
     description: 'Inspection, progress and completion photos keep you informed.',
   },
   {
-    title: 'Roofing and guttering',
-    description: 'From hard-to-find leaks and tile repairs to re-roofing, gutters, downpipes and gutter guard.',
+    title: 'Roof repairs and replacement roofing',
+    description: 'From repairing a broken shed roof to roofing work for a current build, the team focuses on careful workmanship.',
   },
 ];
 
@@ -31,7 +31,7 @@ export default function HomeWhyUs() {
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-right" duration={0.85}>
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Why choose Go With Joe
+                Why choose Robustus Roofing
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
                 Roof repairs done with care and attention to detail
@@ -72,8 +72,8 @@ export default function HomeWhyUs() {
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#15191E]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Roof repairs and guttering
+                  <div className="absolute bottom-3 left-3 bg-[#171717]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Roof repairs and replacement roofing
                   </div>
                 </div>
                 {/* Additional roof repair imagery */}
@@ -87,15 +87,15 @@ export default function HomeWhyUs() {
                   />
                 </div>
                 {/* Projeto residencial detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F5F7] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F7F5EF] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roofb3-1.jpg"
-                    alt="Roof repairs and guttering"
+                    alt="Roof repairs and replacement roofing"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#15191E]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#171717]/80 text-paper font-body text-12 px-3 py-2 text-center">
                      Roofing projects
                   </div>
                 </div>

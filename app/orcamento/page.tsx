@@ -11,30 +11,30 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a quote',
   description:
-    'Request a quote for roof repairs, re-roofing or guttering from Go With Joe. Call +61 432 616 008.',
+    'Request a quote for roof repairs, roof replacement or new build roofing from Robustus Roofing. Call +64 22 358 6401.',
   pathname: '/request-a-quote/',
 });
 
 const BOOKING_STEPS = [
   {
     step: 1,
-    title: 'Tell Joe what you need',
-    description: 'Describe your roof or guttering project and let Joe know how to reach you.',
+    title: 'Tell us about your roofing project',
+    description: 'Describe your roofing project and let us know how to reach you.',
   },
   {
     step: 2,
     title: 'Roof inspection',
-    description: 'Joe will review your enquiry, arrange an inspection and explain the next steps.',
+    description: 'The team will review your enquiry and get in touch about the next steps.',
   },
   {
     step: 3,
-    title: 'Joe will be in touch',
-    description: 'Joe will be in touch to discuss your enquiry and next steps.',
+    title: 'The Robustus team will be in touch',
+    description: 'The Robustus team will be in touch to discuss your enquiry and next steps.',
   },
   {
     step: 4,
     title: 'Roofing work',
-    description: 'Joe and the team complete the agreed roofing work.',
+    description: 'The team completes the agreed roofing work.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function BookAppointmentPage() {
                 </span>
                 <WordRevealH1 text="Request a quote." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Tell Joe what is happening with your roof and arrange an inspection and quote." />
+                  <ScrubbedParagraph text="Tell us about your roof and request pricing for the work." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -62,9 +62,9 @@ export default function BookAppointmentPage() {
             <div className="lg:col-span-4 lg:pl-6">
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
-                  <span className="font-medium text-forest block">Call Joe:</span>
+                  <span className="font-medium text-forest block">Call Robustus Roofing:</span>
                   <p className="text-forest-ink/70">
-                    Prefer to speak with Joe directly? Call any time to discuss the work.
+                    Prefer to speak with the team directly? Call to discuss your project.
                   </p>
                   <a
                     href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -94,7 +94,7 @@ export default function BookAppointmentPage() {
                     Next steps
                   </h2>
                   <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
-                    Joe will discuss the issue, inspect the roof and provide a clear quote.
+                    The team will discuss your project and how to proceed.
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -139,7 +139,7 @@ export default function BookAppointmentPage() {
             <AnimateOnScroll animation="fade-up" delay={0.1}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Contact</span>
-                <h3 className="font-display text-21 text-forest-ink mb-4">Talk to Joe</h3>
+                <h3 className="font-display text-21 text-forest-ink mb-4">Contact Robustus Roofing</h3>
                 <div className="space-y-3 font-body text-13 text-forest-ink/80">
                   <div>
                     <span className="text-forest-ink/60 block">Phone:</span>
@@ -168,7 +168,7 @@ export default function BookAppointmentPage() {
                       <span>{item.day}</span>
                       <span className="tabular-nums">{item.hours}</span>
                     </div>
-                  )) : <p>Call Joe to confirm availability.</p>}
+                  )) : <p>Call Robustus Roofing to confirm availability.</p>}
                 </div>
               </div>
             </AnimateOnScroll>
@@ -179,7 +179,7 @@ export default function BookAppointmentPage() {
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Location</span>
                 <h3 className="font-display text-21 text-forest-ink mb-4">Service area</h3>
                 <p className="font-body text-13 text-forest-ink/80 leading-relaxed mb-3">
-                  Atendemos em Warriewood e região. Contact us to confirm availability for your property.
+                  Atendemos em Auckland e região. Contact us to confirm availability for your property.
                 </p>
               </div>
             </AnimateOnScroll>

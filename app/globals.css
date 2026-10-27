@@ -5,19 +5,19 @@
 @layer base {
   :root {
     --paper: #FFFFFF; /* Main Background */
-    --paper-secondary: #F3F5F7; /* Secondary Background */
-    --forest: #0B141C; /* Deep Sections */
-    --forest-ink: #15191E; /* Main Text */
-    --black-accent: #0B141C; /* Deep Blue */
-    --secondary-text: #69727C; /* Secondary Text */
-    --primary-brand: #FF4B0B; /* Primary Brand / CTA */
-    --brand-hover: #FF6528; /* Hover / Highlight */
-    --navy-accent: #121E28; /* Navy Blue Accent */
-    --soft-blue: #FF8A4C; /* Soft Blue */
-    --soft-orange: #FF8A4C; /* Soft Orange */
-    --lime: #FF4B0B;
-    --orange: #FF4B0B;
-    --mist: #E1E5E9; /* Borders */
+    --paper-secondary: #F7F5EF; /* Secondary Background */
+    --forest: #080808; /* Deep Sections */
+    --forest-ink: #171717; /* Main Text */
+    --black-accent: #080808; /* Deep Blue */
+    --secondary-text: #686868; /* Secondary Text */
+    --primary-brand: #C9AD68; /* Primary Brand / CTA */
+    --brand-hover: #E0C785; /* Hover / Highlight */
+    --navy-accent: #080808; /* Navy Blue Accent */
+    --soft-blue: #B89A50; /* Soft Blue */
+    --soft-orange: #B89A50; /* Soft Orange */
+    --lime: #C9AD68;
+    --orange: #C9AD68;
+    --mist: #E5DFD2; /* Borders */
     
     --font-display: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

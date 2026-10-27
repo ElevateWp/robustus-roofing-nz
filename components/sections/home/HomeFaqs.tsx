@@ -8,28 +8,28 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What roofing services do you provide?',
-    answer: 'Joe and his team handle roof repairs, leak detection, re-roofing, metal roofing, gutters, downpipes and gutter guard.',
+    answer: 'The team handles roof repairs, roof replacements and roofing for new builds.',
     relatedLink: { href: '/services/', label: 'Explore roofing services →' },
   },
   {
-    question: 'Which areas does Go With Joe service?',
-    answer: 'Go With Joe is based in Warriewood and serves Sydney Northern Beaches.',
-    relatedLink: { href: '/contact/', label: 'Talk to Joe →' },
+    question: 'Which areas does Robustus Roofing service?',
+    answer: 'Robustus Roofing is based in Auckland, New Zealand. Call the team to discuss your location.',
+    relatedLink: { href: '/contact/', label: 'Talk to Joshua →' },
   },
   {
     question: 'What types of roof repair do you do?',
-    answer: 'Joe repairs roof leaks, storm damage, broken tiles and guttering issues. Get in touch to discuss the work you need.',
+    answer: 'Joshua and the team handle roof repairs and replacement roofing. Contact them to discuss your project.',
     relatedLink: { href: '/roof-repairs/', label: 'Explore services →' },
   },
   {
     question: 'How do I request a quote?',
-    answer: `Call Joe at ${CLINIC_INFO.contact.phone} or use the quote form.`,
+    answer: `Call Robustus Roofing at ${CLINIC_INFO.contact.phone} or use the quote form.`,
     relatedLink: { href: '/request-a-quote/', label: 'Request a quote →' },
   },
   {
     question: 'How do I check availability?',
-    answer: `Call Joe at ${CLINIC_INFO.contact.phone} to discuss your property and check availability.`,
-    relatedLink: { href: '/contact/', label: 'Talk to Joe →' },
+    answer: `Call Robustus Roofing at ${CLINIC_INFO.contact.phone} to discuss your property and check availability.`,
+    relatedLink: { href: '/contact/', label: 'Talk to Joshua →' },
   },
 ];
 
@@ -54,7 +54,7 @@ export default function HomeFaqs() {
                 Ficou com alguma dúvida?
               </span>
               <p className="font-body text-13 text-forest-ink/70 mb-3">
-                Call Joe or send an enquiry. He will be happy to help.
+                Call Robustus Roofing or send an enquiry to discuss your project.
               </p>
               <a
                 href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -62,7 +62,7 @@ export default function HomeFaqs() {
                 rel="noopener noreferrer"
                 className="font-body text-13 text-forest font-medium underline underline-offset-4"
               >
-                Call Joe at
+                Call Robustus Roofing at
               </a>
             </div>
           </AnimateOnScroll>

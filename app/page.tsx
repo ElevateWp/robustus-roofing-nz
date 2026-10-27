@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roof repairs and guttering in Warriewood, NSW',
+  title: 'Roof repairs in Auckland, New Zealand',
   description:
-    'Go With Joe provides roof repairs, guttering and re-roofing across Warriewood and Sydney Northern Beaches. Call +61 432 616 008.',
+    'Robustus Roofing Limited provides roof repairs, replacement roofing and new build roofing in Auckland, New Zealand. Call +64 22 358 6401.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Go With Joe Roof Repairs & Guttering */}
+      {/* SECTION 4: Why Choose Robustus Roofing Limited */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Nossa equipe */}

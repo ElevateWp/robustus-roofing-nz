@@ -3,7 +3,8 @@ import { CLINIC_INFO } from './clinic-data';
 
 const vercelHost = process.env.VERCEL_URL;
 const deploymentUrl = vercelHost ? (vercelHost.startsWith('http') ? vercelHost : `https://${vercelHost}`) : 'http://localhost:3000';
-export const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL || deploymentUrl).replace(/\/+$/, '');
+const productionSiteUrl = process.env.VERCEL_ENV === 'production' ? 'https://www.robustusroofing.co.nz' : deploymentUrl;
+export const BASE_URL = (process.env.NEXT_PUBLIC_SITE_URL || productionSiteUrl).replace(/\/+$/, '');
 
 export function createMetadata({
   title,
@@ -18,7 +19,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/logo.png`;
+  const defaultImage = `${BASE_URL}/images/robustus-roofing-logo.png`;
 
   return {
     title: fullTitle,
@@ -94,7 +95,7 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Roof repairs, re-roofing and guttering',
+    serviceType: 'Roof repairs, roof replacement and new build roofing',
     url: `${BASE_URL}${url}`,
     provider: {
       '@type': 'LocalBusiness',

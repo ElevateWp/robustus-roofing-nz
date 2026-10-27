@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E1E5E9] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E5DFD2] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,8 +74,8 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#FF4B0B;
-          border:1px solid #121E28;
+          background:#C9AD68;
+          border:1px solid #080808;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
@@ -85,28 +85,28 @@ export default function HomeHero() {
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#FF6528;
+          background:#E0C785;
           box-shadow:0 8px 26px rgba(9,44,145,0.45);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #0B141C;
+          outline:2px solid #080808;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #E1E5E9;
+          border:1px solid #E5DFD2;
           border-radius:8px;
           font-size:12px;
-          color:#15191E;
+          color:#171717;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#15191E;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#171717;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#69727C;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#69727C;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#69727C;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#69727C;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#686868;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#686868;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#686868;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#686868;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#0B141C;
+          background:#080808;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#E1E5E9;
+          color:#E5DFD2;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#FF4B0B;
+          color:#C9AD68;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,20 +188,20 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="Go With Joe"
+          word="Robustus Roofing"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#15191E",
-            "--gp-field": "#0B141C",
+            "--gp-ink": "#171717",
+            "--gp-field": "#080808",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Meet Go With Joe"
+          enterLabel="Meet Robustus Roofing"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Go With Joe Roof Repairs & Guttering</span>
-                <span data-ch-hero-category>Warriewood · NSW<br />Sydney Northern Beaches</span>
+                <span data-ch-hero-brand>Robustus Roofing Limited</span>
+                <span data-ch-hero-category>Auckland · New Zealand<br />Auckland and surrounding areas</span>
               </div>
-              <p data-ch-hero-intro>Roof repairs and guttering</p>
+              <p data-ch-hero-intro>Roof repairs and replacement roofing</p>
               <p data-ch-hero-support>
-                Roof repairs, leak detection and guttering across Sydney Northern Beaches.
+                Roof repairs, roof replacements and new build roofing in Auckland, New Zealand.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,7 +265,7 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Roof repairs and guttering, with clear communication from inspection to completion.
+              Roofing work with care, skill and attention to detail.
             </h2>
 
             <div data-slipstream-features>
@@ -282,44 +282,44 @@ export default function HomeHero() {
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Guttering & downpipes
+                  New build roofing
                 </h3>
                 <p>
-                  Gutter repairs, replacement, downpipes and gutter guard.
+                  Roofing for new builds, delivered with care and a quality finish.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Re-roofing
+                  Roof replacement
                 </h3>
                 <p>
-                  Quality workmanship, fair quotes and photo updates.
+                  Roof replacement work with careful attention to detail.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="https://wa.me/61432616008"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#FF4B0B] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(9,44,145,0.35)] transition-all hover:bg-[#FF6528] hover:shadow-[0_8px_26px_rgba(9,44,145,0.45)]"
+                href="tel:+64223586401"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#C9AD68] px-7 font-body text-sm font-semibold text-[#080808] shadow-[0_6px_20px_rgba(8,8,8,0.18)] transition-all hover:bg-[#E0C785] hover:shadow-[0_8px_26px_rgba(9,44,145,0.45)]"
               >
-                Call Joe
+                Call Robustus Roofing
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="https://wa.me/61432616008"
+                href="tel:+64223586401"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#FF6528]" />
-                Call Joe
+                <Phone size={15} className="text-[#E0C785]" />
+                Call Robustus Roofing
               </a>
               <a
                 href="#home-stats"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>See reviews and services</span>
+                <span>See customer reviews and services</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,12 +332,12 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#15191E",
+            color: "#171717",
             fontSize: 14,
             fontWeight: 500,
           }}
         >
-          Carregando…
+          Loading…
         </div>
       )}
     </div>

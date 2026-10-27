@@ -148,9 +148,9 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#0B141C] text-paper overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#080808] text-paper overflow-hidden select-none"
       style={{ willChange: 'clip-path, opacity' }}
-      aria-label="Carregando Go With Joe Roof Repairs & Guttering"
+      aria-label="Carregando Robustus Roofing Limited"
     >
       {/* One charcoal cover retracts along a stepped diagonal, keeping the reveal continuous. */}
 
@@ -161,11 +161,11 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-[#F2A277] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#FF6528]/40"
+          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-[#080808] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#E0C785]/40"
         >
           <Image
             src="/images/logo.png"
-            alt="Go With Joe Roof Repairs & Guttering"
+            alt="Robustus Roofing Limited"
             width={80}
             height={80}
             priority
@@ -178,7 +178,7 @@ export default function PagePreloader() {
           ref={titleRef}
           className="font-display text-22 sm:text-30 md:text-36 font-medium text-paper uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
         >
-          Go With Joe Roof Repairs & Guttering
+          Robustus Roofing Limited
         </h1>
 
         {/* Delicate Golden-Lime Divider Line */}
